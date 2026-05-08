@@ -668,6 +668,50 @@ function CertificatePage() {
 function FullCourse({ onNavigate }) {
   return (
     <div className="course-print-book">
+      <section className="course-print-page print-cover-page">
+        <div className="mx-auto flex min-h-[88vh] max-w-[900px] flex-col justify-between px-gutter py-margin">
+          <div className="text-center">
+            <div className="mx-auto mb-10 flex h-20 w-20 items-center justify-center rounded-full bg-primary text-on-primary">
+              <Icon filled className="text-5xl">school</Icon>
+            </div>
+            <p className="font-label-md text-label-md uppercase tracking-[0.28em] text-secondary">
+              Support de cours
+            </p>
+            <h1 className="mt-5 font-display-lg text-display-lg text-primary">Entrepreneuriat</h1>
+            <p className="mx-auto mt-6 max-w-xl font-body-lg text-body-lg text-on-surface-variant">
+              Synthèse générale : fondements, environnement de l'entreprise, processus de création
+              et Business Plan.
+            </p>
+          </div>
+
+          <div className="mx-auto w-full max-w-2xl rounded-2xl border border-outline-variant bg-white p-8">
+            <div className="grid gap-5 sm:grid-cols-2">
+              <div>
+                <p className="font-caption text-caption uppercase text-on-surface-variant">Préparé pour</p>
+                <p className="mt-1 font-label-md text-label-md font-bold text-primary">JEAN-MARC VERBECK</p>
+              </div>
+              <div>
+                <p className="font-caption text-caption uppercase text-on-surface-variant">Date</p>
+                <p className="mt-1 font-label-md text-label-md font-bold text-primary">08 mai 2026</p>
+              </div>
+              <div>
+                <p className="font-caption text-caption uppercase text-on-surface-variant">Institution</p>
+                <p className="mt-1 font-label-md text-label-md font-bold text-primary">
+                  Institut Supérieur d'Entrepreneuriat
+                </p>
+              </div>
+              <div>
+                <p className="font-caption text-caption uppercase text-on-surface-variant">Référence</p>
+                <p className="mt-1 font-label-md text-label-md font-bold text-primary">EA-COURS-2026</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center font-caption text-caption text-on-surface-variant">
+            Document généré depuis l'application Entrepreneuriat
+          </div>
+        </div>
+      </section>
       <section className="course-print-page">
         <HomePage onNavigate={onNavigate} />
       </section>

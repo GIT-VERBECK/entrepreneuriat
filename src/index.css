@@ -395,6 +395,12 @@ footer {
   break-after: auto;
 }
 
+.print-cover-page {
+  background:
+    linear-gradient(180deg, rgba(245, 200, 75, 0.16), rgba(255, 255, 255, 0) 45%),
+    #ffffff;
+}
+
 @media print {
   @page {
     margin: 14mm;
